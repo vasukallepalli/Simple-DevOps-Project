@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted  # Your EC2 runner
+    runs-on: [self-hosted, linux, ec2]  # Your EC2 runner
 
     steps:
       - name: Checkout code
